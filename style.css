@@ -1,0 +1,84 @@
+:root {
+  --color-primario: #1e3a8a;
+  --color-secundario: #f59e0b;
+  --color-fondo: #f9fafb;
+  --color-texto: #1f2937;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+header {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--color-secundario);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+h1, h2 {
+  color: var(--color-primario);
+}
+
+p {
+  line-height: 1.6;
+}
+
+.productos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  flex: 1 1 250px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+footer {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Hack CSS: clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
